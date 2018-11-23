@@ -58,7 +58,60 @@
 
       	<section class="filters">
         	<h2 class="visually-hidden">Фильтр товаров</h2>
-        	<!-- форма -->
+        	<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <input type="text" name="min-price" class="filter-price" id="filter-min-price" value="0">
+                    <input type="text" name="max-price" class="filter-price" id="filter-max-price" value="30000">
+                    <div class="price-slider"></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">                         
+                            <input type="checkbox" name="bosch" id="filter-bosch" class="visually-hidden filter-checkbox" checked>
+                            <label for="filter-bosch">bosch</label>
+                        </li>
+
+                        <li class="filter-option">                         
+                            <input type="checkbox" name="interskol" id="filter-interskol" class="visually-hidden filter-checkbox">
+                            <label for="filter-interskol">интерскол</label>
+                        </li>
+
+                        <li class="filter-option">                         
+                            <input type="checkbox" name="makita" id="filter-makita" class="visually-hidden filter-checkbox" checked>
+                            <label for="filter-makita">makita</label>
+                        </li>
+
+                        <li class="filter-option">                         
+                            <input type="checkbox" name="dewalt" id="filter-dewalt" class="visually-hidden filter-checkbox">
+                            <label for="filter-dewalt">dewalt</label>
+                        </li>
+
+                        <li class="filter-option">                         
+                            <input type="checkbox" name="hitachi" id="filter-hitachi" class="visually-hidden filter-checkbox">
+                            <label for="filter-hitachi">hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-radio" name="product-group" value="battery" id="filter-battery" checked>
+                            <label for="filter-battery">Аккумуляторные</label>
+                        </li>
+
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-radio" name="product-group" value="wired" id="filter-wired">
+                            <label for="filter-wired">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-submit">Показать</button>   
+            </form>
       	</section>
 
       	<section class="catalog">
@@ -237,7 +290,17 @@
 			<p class="e-mail">Обратная связь: <br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 			<p class="developer-link">Разработано - <br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   		</div>
-  	</footer>   
+  	</footer>
+
+    <section class="modal modal-cart">
+        <h2 class="visually-hidden">Корзина</h2>
+        <div class="modal-cart-menu">
+            <p>Товар добавлен в корзину!</p>
+            <a href="order.html" class="button">Оформить заказ</a>
+            <button type="button">Продолжить покупки</button>
+        </div>       
+        <button type="button" class="modal-close">Закрыть</button>
+    </section>   
 	
 </body>
 </html>

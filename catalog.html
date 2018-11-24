@@ -28,14 +28,16 @@
 				<a class="phone-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
 				<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 			</p>
-			<ul class="user-navigation">
+			<div class="profile-menu">
                 <p>
-                    <span>Равшан Джамшутович</span>
+                    <a href="#">Равшан Джамшутович</a>
                     <button class="user-logout">Выйти</button>
                 </p>
-				<li class="user-btn"><a href="#">Мои заказы</a></li>
-				<li class="user-btn"><a href="#">Личный кабинет</a></li>
-			</ul>
+                <ul class="user-navigation">
+				    <li class="user-btn"><a href="#">Мои заказы</a></li>
+				    <li class="user-btn"><a href="#">Личный кабинет</a></li>
+                </ul>
+			</div>
   		</div>
 
   		<nav class="main-menu">
@@ -61,15 +63,8 @@
       	</ul>
 
       	<section class="filters">
-        	<h2 class="visually-hidden">Фильтр товаров</h2>
+        	<h2>Фильтр:</h2>
         	<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>Цена:</legend>
-                    <input type="text" name="min-price" class="filter-price" id="filter-min-price" value="0">
-                    <input type="text" name="max-price" class="filter-price" id="filter-max-price" value="30000">
-                    <div class="price-slider"></div>
-                </fieldset>
-
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>

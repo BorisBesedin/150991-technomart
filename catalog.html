@@ -12,7 +12,7 @@
   		<div class="header-top">
   			<a href="index.html" class="logo">Техномарт</a>
   			<form class="header-search" method="get">
-  				<input name="header-search" placeholder="Поиск:" type="search">
+  				<input name="header-search" placeholder="Поиск:" type="search" area-label="Поиск">
   			</form>
   			<a class="favorites-button btn" href="#">Закладки: <span class="favorites-number">0</span></a>
   			<a class="basket-button btn" href="#">Корзина: <span class="basket-number">0</span></a>
@@ -66,6 +66,15 @@
         	<h2>Фильтр:</h2>
         	<form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
+                    <legend>Цена:</legend>
+                    <div class="price-controls">
+                        <button type="button" class="min-price-set filter-price-btn"></button>
+                        <button type="button" class="max-price-set filter-price-btn"></button>                        
+                    </div>
+                    <input type="number" name="min-price" value="0" area-label="Минимальная цена">
+                    <input type="number" name="max-price" value="30000" area-label="Максимальная цена">         
+                </fieldset>
+                <fieldset>
                     <legend>Производители:</legend>
                     <ul>
                         <li class="filter-option">                         
@@ -109,11 +118,36 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="filter-submit">Показать</button>   
+                <button type="submit" class="catalog-btn">Показать</button>   
             </form>
       	</section>
 
       	<section class="catalog">
+            <h2>Сортировка:</h2>
+            <form form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <ul class="sort-method">
+                    <li class="sort-option">
+                        <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="price" id="sort-price" checked>
+                        <label for="sort-price">По цене</label>
+                    </li>
+
+                    <li class="sort-option">
+                        <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="type" id="sort-type">
+                        <label for="sort-type">По типу</label>
+                    </li>
+
+                    <li class="sort-option">
+                        <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="function" id="sort-function">
+                        <label for="sort-function">По функционалу</label>
+                    </li>
+                </ul> 
+
+                <div class="sort-direction">
+                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="ascending" id="sort-ascending" area-label="Сортировка по возрастанию">
+                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="descending" id="sort-descending" area-label="Сортировка по убыванию">
+                </div>
+            </form>
+
       		<h2 class="visually-hidden">Каталог</h2>
       		<ul class="catalog-list">
       			<li class="catalog-item">
@@ -241,6 +275,15 @@
             		</h3>
             		<p class="item-price sale">12 500 Р.</p>
       			</li>
+
+                <div class="pagination-list">
+                    <ul>
+                        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                    </ul>
+                    <button type="button" class="catalog-btn">Следующая</button>
+                </div>
       		</ul>
       	</section>
 

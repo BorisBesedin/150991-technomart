@@ -12,7 +12,8 @@
   		<div class="header-top">
   			<a href="index.html" class="logo">Техномарт</a>
   			<form class="header-search" method="get">
-  				<input name="header-search" placeholder="Поиск:" type="search" area-label="Поиск">
+  				<input name="header-search" placeholder="Поиск:" type="search" id="header-search">
+                <label for="header-search" class="visually-hidden">Поиск</label>
   			</form>
   			<a class="favorites-button btn" href="#">Закладки: <span class="favorites-number">0</span></a>
   			<a class="basket-button btn" href="#">Корзина: <span class="basket-number">0</span></a>
@@ -71,8 +72,10 @@
                         <button type="button" class="min-price-set filter-price-btn"></button>
                         <button type="button" class="max-price-set filter-price-btn"></button>                        
                     </div>
-                    <input type="number" name="min-price" value="0" area-label="Минимальная цена">
-                    <input type="number" name="max-price" value="30000" area-label="Максимальная цена">         
+                    <label for="min-price" class="visually-hidden">Минимальная цена</label>
+                    <input type="number" name="min-price" value="0" id="min-price">   
+                    <label for="max-price" class="visually-hidden">Максимальная цена</label>                 
+                    <input type="number" name="max-price" value="30000" id="max-price">                             
                 </fieldset>
                 <fieldset>
                     <legend>Производители:</legend>
@@ -124,7 +127,7 @@
 
       	<section class="catalog">
             <h2>Сортировка:</h2>
-            <form form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <ul class="sort-method">
                     <li class="sort-option">
                         <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="price" id="sort-price" checked>
@@ -143,8 +146,10 @@
                 </ul> 
 
                 <div class="sort-direction">
-                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="ascending" id="sort-ascending" area-label="Сортировка по возрастанию">
-                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="descending" id="sort-descending" area-label="Сортировка по убыванию">
+                    <label for="sort-ascending" class="visually-hidden">По возрастанию</label>
+                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="ascending" id="sort-ascending">
+                    <label for="sort-descending" class="visually-hidden">По убыванию</label>
+                    <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="descending" id="sort-descending">
                 </div>
             </form>
 
@@ -275,16 +280,14 @@
             		</h3>
             		<p class="item-price sale">12 500 Р.</p>
       			</li>
+            </ul>
 
-                <div class="pagination">
-                    <ul class="pagination-list">
-                        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                        <li class="pagination-item"><a href="#">2</a></li>
-                        <li class="pagination-item"><a href="#">3</a></li>
-                    </ul>
-                    <button type="button" class="catalog-btn">Следующая</button>
-                </div>
-      		</ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
+            </ul>
       	</section>
 
         <section class="categoty-description">

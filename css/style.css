@@ -1,4 +1,337 @@
 body{
-	font-family: 'Cuprum', sans-serif;
-	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #fff;
+	background: #fff;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.visually-hidden{
+	display: none;
+}
+.header-top{
+	font-size: 17px;
+	line-height: 18px;
+	background: #293449;
+}
+.logo{
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	background: #ee3643;
+	cursor: pointer;
+}
+.logo:hover{
+	background: #ca2c37;
+}
+.logo:active{
+	background: #ba2732;
+}
+.header-search{
+	outline: none;
+	border: none;
+	background: none;
+}
+.header-search:hover,
+.buy-btn:hover{
+	background: #212a3a;
+}
+.buy-btn:active{
+	background: #161d29;
+	color: #9b9da2;
+}
+.header-search:focus{
+	background: #fff;
+	color: #000;
+}
+.order-button{
+	background: #63a63e;
+}
+.order-button:hover{
+	background: #5fbb2d;
+}
+.order-button:active{
+	opacity: 0.6;
+}
+.header-bottom{
+	background: #fff;
+}
+.header-bottom h1{
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	font-style: italic;
+}
+.header-contacts .phone-number{
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+.header-contacts .adress{
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+.user-reg-link{
+	font-size: 21px;
+	line-height: 21px;
+	list-style: none;
+}
+.user-reg-link a{
+	color: #000;
+}
+.user-reg-link a:hover{
+	color: #ee3643;
+}
+.user-reg-link a:active{
+	color: #000;
+	opacity: 0.2;
+}
+.main-menu{
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	background: #32425c;
+}
+.site-navigation{
+	list-style: none;
+}
+.site-navigation a:hover{
+	background: #293449;
+}
+.site-navigation a:active{
+	background: #1d2739;
+	opacity: 0.8;
+}
+.button{
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	background: #ee3643;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.button:hover{	
+	background: #ca2c37;
+}
+.button:active{	
+	background: #ba2732;
+}
+.slide-name{
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.slide-description{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.promo-list{
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+	list-style: none;	
+}
+.promo-list .materials{
+	background: #ffbf47;
+}
+.promo-list .instruments{
+	background: #3bbce3;
+}
+.promo-list .technic{
+	background: #dc91d8;
+}
+.promo-list .sale{
+	background: #8ed78f;
+}
+.promo-list .delivery{
+	background: #ffc047;
+}
+.promo-btn{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.1);
+}
+.promo-btn:hover{
+	background: rgba(0, 0, 0, 0.2);
+}
+.promo-btn:active{
+	background: rgba(0, 0, 0, 0.3);
+}
+.section-title{
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #32425c;
+}
+.popular-items{
+	list-style: none;
+}
+.catalog-item-title{
+	font-size: 18px;
+	line-height: 20px;
+	color: #000;
+}
+.buy-item-btn{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #63a63e;
+	border: none;
+	border-bottom: 2px solid #367315;
+	outline: none;
+}
+.buy-item-btn:hover{
+	background: #5fbb2d;
+}
+.buy-item-btn:active{
+	background: #518534;
+	border: none;
+}
+.cart-item-btn{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #32425c;
+	background: #fff;
+	border: 2px solid #367315;
+	outline: none;
+	cursor: pointer;
+}
+.cart-item-btn:hover{	
+	border-color: #32425c;
+}
+.cart-item-btn:active{
+	opacity: 0.2;
+}
+.item-price{
+	font-size: 17px;
+	line-height: 18px;
+	color: #fff;
+	background: #ee3643;
+}
+.brands-list{
+	list-style: none;
+}
+.brands-list .brand:hover{
+	box-shadow: 0 5px 10px #aeb2ba;
+}
+.brands-list .brand:active{
+	opacity: 0.4;
+}
+.services h2{
+	color: #000;
+}
+.services h3{
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	text-transform: uppercase;
+	font-weight: normal;
+
+}
+.about-company{
+	color: #000;
+}
+.about-company h3{
+	color: #000;
+}
+.services p,
+.about-company p{
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+}
+.services-slider-btn{
+	font-size: 21px;
+	line-height: 30px;
+	color: #fff;
+	background: #32425c;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.services-slider-btn:hover{
+	background: #293449;
+}
+.services-slider-btn:focus{
+	background: #fff;
+	color: #32425c;
+}
+.delivery-by{
+	list-style: none;
+}
+.page-footer{
+	background: #32425c;
+	color: #fff;
+}
+.footer-navigation,
+.footer-promo{
+	list-style: none;
+	font-size: 18px;
+	line-height: 24px;
+}
+.footer-promo a{
+	color: #ffd180;
+}
+.footer-menu-btn:hover{
+	border-bottom: 1px solid #fff;
+}
+.footer-promo .footer-menu-btn:hover{
+	border-bottom: 1px solid #ffd180;
+}
+.footer-menu-btn:active{
+	border: none;
+	opacity: 0.4;
+}
+.footer-contacts{
+	font-size: 16px;
+	line-height: 18px;
+}
+.footer-social ul{
+	list-style: none;
+}
+.social-button{
+	background: #212a3a;
+}
+.social-button:hover,
+.social-button:active{
+	background: #ee3643;
+}
+.developer-contacts{
+	color: #ffd180;
+}
+.developer-contacts:hover{
+	border-bottom: 1px solid #ffd180;
+}
+.developer-contacts:active{
+	color: #ee3643;
+	border: none;
+}
+.modal{
+	font-size: 18px;
+	line-height: 18px;
+	color: #000;
+}
+.modal input,
+.modal textarea{
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+
+}
+
+
+
+
+
+

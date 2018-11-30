@@ -11,40 +11,50 @@
     <body>
       	<header class="page-header">
       		<div class="header-top">
-      			<a class="logo">Техномарт</a>
-      			<form class="header-search" method="get">
-      				<input name="header-search" placeholder="Поиск:" type="search" id="header-search" class="header-search">
-                    <label for="header-search" class="visually-hidden">Поиск</label>
-      			</form>
-      			<a class="buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
-      			<a class="buy-btn header-top-btn" href="#">Корзина: <span class="basket-number">0</span></a>
-      			<a class="order-button header-top-btn" href="#">Оформить заказ</a>
+                <div class="header-top-container">
+          			<a class="logo">Техномарт</a>
+          			<form class="header-search" method="get">
+          				<input name="header-search" placeholder="Поиск:" type="search" id="header-search" class="header-search">
+                        <label for="header-search" class="visually-hidden">Поиск</label>
+          			</form>
+          			<a class="buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
+          			<a class="buy-btn header-top-btn" href="#">Корзина: <span class="basket-number">0</span></a>
+          			<a class="order-button header-top-btn" href="#">Оформить заказ</a>
+                </div>
       		</div>
-      		<div class="header-bottom">
-      			<h1>Интернет-магазин
-    				строительных материалов
-    				и инструментов для ремонта
-    			</h1>
-    			<p class="header-contacts">
-    				<a class="phone-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-    				<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-    			</p>
-    			<ul class="user-navigation">
-    				<li class="user-reg-link"><a href="login.html">Войти</a></li>
-    				<li class="user-reg-link"><a href="registration.html">Регистрация</a></li>
-    			</ul>
-      		</div>
-      		<nav class="main-menu">
-      			<ul class="site-navigation">
-      				<li><a href="index.html">Главная</a></li>
-      				<li><a href="about-company.html">Компания</a></li>
-      				<li><a href="catalog.html">Каталог</a></li>
-      				<li><a href="news.html">Новости</a></li>
-      				<li><a href="special-offer.html">Спецпредожения</a></li>
-      				<li><a href="delivery.html">Доставка</a></li>
-      				<li><a href="contacts.hlml">Контакты</a></li>
-      			</ul>
-      		</nav>
+            <div class="container">
+          		<div class="header-bottom">
+                    <div class="header-site-info">
+                        <h1>Интернет-магазин
+                            строительных материалов
+                            и инструментов для ремонта
+                        </h1>
+
+                		<p class="header-contacts">
+                			<a class="phone-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+                			<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                		</p>
+                    </div>
+
+            		<ul class="user-navigation">
+            			<li class="user-reg-link"><a href="login.html">Войти</a></li>
+            			<li class="user-reg-link"><a href="registration.html">Регистрация</a></li>
+            		</ul>
+                </div>
+      		
+
+          		<nav class="main-menu">
+          			<ul class="site-navigation">
+          				<li><a href="index.html">Главная</a></li>
+          				<li><a href="about-company.html">Компания</a></li>
+          				<li><a href="catalog.html">Каталог</a></li>
+          				<li><a href="news.html">Новости</a></li>
+          				<li><a href="special-offer.html">Спецпредожения</a></li>
+          				<li><a href="delivery.html">Доставка</a></li>
+          				<li><a href="contacts.hlml">Контакты</a></li>
+          			</ul>
+          		</nav>
+            </div>
       	</header>
 
       	<main class="container">
@@ -212,26 +222,29 @@
       		</section>
 
     	  	<section class="about-company">
-    	  		<h2 class="visually-hidden">О компании</h2>
-    	  		<div class="about-info">
-    	  			<h3 class="section-title">Компания "Техномарт"</h3>
-    	  			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-    	  			<p>Мы можем доставить ваш товар в самые отдаленные точки России!
-    				Техномарт работает со многими транспортными компаниями: </p>
-    				<ul class="delivery-by">
-    					<li>Деловые линии</li>
-    					<li>Автотрейдинг</li>
-    					<li>ЖелДорЭкспедиция</li>
-    				</ul>
-    				<a class="button" href="adout-company.html">Подробнее о компании</a>
-    	  		</div>
-    	  		<div class="about-contacts">
-    	  			<h3 class="section-title">Контакты</h3>
-    	  			<p>Вы можете забрать товар сами, 
-    				заехав в наш офис:</p>
-    				<img src="img/map.jpg" alt="расположение на карте" width="300" height="158">
-    				<button type="button" class="button">Заблудились? Напишите нам!</button>
-    	  		</div>
+        	  	<h2 class="visually-hidden">О компании</h2>
+                <div class="about-container">
+            	  	<div class="about-info">                    
+            	  		<h3 class="section-title">Компания "Техномарт"</h3>
+            	  		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            	  		<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+            				Техномарт работает со многими транспортными компаниями: </p>
+            			<ul class="delivery-by">
+            				<li>Деловые линии</li>
+            				<li>Автотрейдинг</li>
+            				<li>ЖелДорЭкспедиция</li>
+            			</ul>
+            			<a class="button" href="adout-company.html">Подробнее о компании</a>
+                    </div>
+     
+            	  	<div class="about-contacts">
+            	  		<h3 class="section-title">Контакты</h3>
+            	  		<p>Вы можете забрать товар сами, 
+            				заехав в наш офис:</p>
+            			<img src="img/map.jpg" alt="расположение на карте" width="300" height="158">
+            			<button type="button" class="button">Заблудились? Напишите нам!</button>
+            	  	</div>
+                </div>
     	  	</section>
     	</main>
 

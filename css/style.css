@@ -17,15 +17,28 @@ a{
 .header-top{
 	background-color: #293449;
 }
+.header-top-container{
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+}
 .header-top-btn{
+	width: 150px;
+
 	font-size: 17px;
 	line-height: 18px;	
 }
 .header-search{
+	width: auto;
+	flex-grow: 1;
+
 	font-size: 17px;
 	line-height: 18px;	
 }
 .logo{
+	width: 220px;
+
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -65,9 +78,21 @@ a{
 .order-button:active{
 	opacity: 0.6;
 }
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
 .header-bottom{
+	display: flex;
+	justify-content: space-between;
+
 	background-color: #fff;
 }
+.header-site-info{
+	display: flex;
+}
+
 .header-bottom h1{
 	font-size: 16px;
 	line-height: 23px;	
@@ -103,6 +128,7 @@ a{
 	opacity: 0.2;
 }
 .main-menu{
+
 	font-size: 17px;
 	line-height: 17px;
 
@@ -110,6 +136,11 @@ a{
 	background-color: #32425c;
 }
 .site-navigation{
+	display: flex;	
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 .site-navigation a:hover{
@@ -261,8 +292,14 @@ a{
 	
 
 }
-.about-company{
+.about-container{
+	display: flex;
+	justify-content: space-between;
+
 	color: #000;
+}
+.about-contacts{
+	margin-left: 120px;
 }
 .about-company h3{
 	color: #000;

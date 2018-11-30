@@ -3,19 +3,23 @@ body{
 	padding: 0;
 
 	font-family: 'Cuprum', Arial, sans-serif;
-	color: #fff;
+	color: #000;
 
 	background-color: #fff;
 }
 a{
   text-decoration: none;
-  color: #fff;
+
 }
 .visually-hidden{
-	visibility: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+.page-header a{
+	color: #fff;
 }
 .header-top{
-	background-color: #293449;
+	background-color: #293449;	
 }
 .header-top-container{
 	display: flex;
@@ -203,6 +207,8 @@ a{
 	line-height: 18px;
 	text-transform: uppercase;
 
+	color: #fff;
+
 	background-color: rgba(0, 0, 0, 0.1);
 }
 .promo-btn:hover{
@@ -334,6 +340,9 @@ a{
 }
 .page-footer{
 	background-color: #32425c;
+	color: #fff;
+}
+.page-footer a{
 	color: #fff;
 }
 .footer-navigation,

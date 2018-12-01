@@ -38,6 +38,7 @@ a{
 	justify-content: space-between;
 	width: 940px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 .header-top-btn{
 	width: 150px;
@@ -99,6 +100,7 @@ a{
 .container{
 	width: 940px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 .header-bottom{
 	display: flex;
@@ -342,9 +344,6 @@ a{
 .section-title{
 	margin-bottom: 34px;
 }
-.delivery-description{
-	margin-top: 50px;
-}
 .delivery-by{
 	list-style: none;
 	margin: 0;
@@ -388,12 +387,17 @@ a{
 
 	width: 940px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 .footer-menu-btn{
 	margin-left: 60px;
 }
 .page-footer a{
 	color: #fff;
+}
+.footer-adress-info{
+	font-size: 18px;
+	line-height: 24px;
 }
 .footer-navigation,
 .footer-promo{
@@ -416,6 +420,9 @@ a{
 	opacity: 0.4;
 }
 .footer-contacts{
+	width: 100%;
+	background-color: #2c384e;
+ 
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -429,8 +436,17 @@ a{
 .social-button:active{
 	background-color: #ee3643;
 }
+.developer-container{
+	display: flex;
+}
 .developer-contacts{
 	color: #ffd180;
+}
+.developer-column{
+	margin-left: 50px;
+}
+.developer-column:nth-child(2){
+	margin-right: 10px;
 }
 .developer-contacts:hover{
 	text-decoration: underline;

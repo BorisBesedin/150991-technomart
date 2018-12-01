@@ -8,18 +8,27 @@ body{
 	background-color: #fff;
 }
 a{
-  text-decoration: none;
+  	text-decoration: none;
 
 }
 .visually-hidden{
 	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
+  	width: 1px;
   	height: 1px;
   	margin: -1px;
+  	border: 0;
+ 	padding: 0;
+
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
 }
 .page-header a{
 	color: #fff;
+	text-align: center;
+
+}
+.page-header{
+	margin-bottom: 120px;
 }
 .header-top{
 	background-color: #293449;	
@@ -32,6 +41,7 @@ a{
 }
 .header-top-btn{
 	width: 150px;
+	padding: 12px 0;
 
 	font-size: 17px;
 	line-height: 18px;	
@@ -93,6 +103,8 @@ a{
 .header-bottom{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	min-height: 160px;
 
 	background-color: #fff;
 }
@@ -119,7 +131,14 @@ a{
 
 	color: #32425c;
 }
+.user-navigation{
+	display: flex;
+	margin: 0;
+	padding: 25px;
+}
 .user-reg-link{
+	margin-left: 60px;
+
 	font-size: 21px;
 	line-height: 21px;
 	list-style: none;
@@ -143,13 +162,14 @@ a{
 	background-color: #32425c;
 }
 .site-navigation{
-	display: flex;	
-	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
+
 .site-navigation a:hover{
 	background-color: #293449;
 }
@@ -307,11 +327,28 @@ a{
 
 	color: #000;
 }
+.about-company{
+	margin-bottom: 88px;
+}
 .about-contacts{
 	margin-left: 120px;
 }
 .about-company h3{
 	color: #000;
+}
+.services{
+	margin-bottom: 180px;
+}
+.section-title{
+	margin-bottom: 34px;
+}
+.delivery-description{
+	margin-top: 50px;
+}
+.delivery-by{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .services p,
 .about-company p{
@@ -345,11 +382,25 @@ a{
 	background-color: #32425c;
 	color: #fff;
 }
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+
+	width: 940px;
+	margin: 0 auto;
+}
+.footer-menu-btn{
+	margin-left: 60px;
+}
 .page-footer a{
 	color: #fff;
 }
 .footer-navigation,
 .footer-promo{
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 	font-size: 18px;
 	line-height: 24px;
@@ -394,6 +445,13 @@ a{
 
 	color: #000;
 }
+.map-container{
+	width: 940px;
+	height: 445px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 .modal input,
 .modal textarea{
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -401,7 +459,10 @@ a{
 	line-height: 16px;
 }
 .breadcrumbs{
+	display: flex;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .breadcrumbs a{
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -453,6 +514,23 @@ a{
 	text-transform: uppercase;
 
 	color: #000;
+}
+.catalog-container{
+	display: flex;
+	justify-content: space-between;
+}
+.catalog-list{	
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.catalog-item{
+	min-width: 225px;
+	text-align: center;
 }
 
 

@@ -105,21 +105,32 @@ a{
 .header-bottom{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	min-height: 160px;
+	align-items: baseline;
+	max-height: 160px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+
 
 	background-color: #fff;
 }
 .header-site-info{
-	display: flex;
+	width: 300px;	
 }
 
 .header-bottom h1{
+	padding: 0 50px;
+	margin: 0;
+
 	font-size: 16px;
 	line-height: 23px;	
 	font-style: italic;
+	font-weight: normal;
 
 	color: #ee3643;
+}
+.header-contacts{
+	margin: 0;
+	text-align: center;
 }
 .header-contacts .phone-number{
 	font-size: 21px;
@@ -136,7 +147,7 @@ a{
 .user-navigation{
 	display: flex;
 	margin: 0;
-	padding: 25px;
+	padding: 0 25px;
 }
 .user-reg-link{
 	margin-left: 60px;
@@ -170,6 +181,9 @@ a{
 	padding: 0;
 
 	list-style: none;
+}
+.site-navigation a{
+	padding: 21px 30px;
 }
 
 .site-navigation a:hover{
@@ -479,8 +493,11 @@ a{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 50px;
 }
 .breadcrumbs a{
+	margin-right: 35px;
+
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -499,12 +516,20 @@ a{
 	color: #000;
 }
 .filter-type{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 47px;
+	padding-top: 20px;
 	border: none;
 }
 .filter-type ul{
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 .filter-name{
+
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 17px;
 	line-height: 30px;
@@ -522,6 +547,10 @@ a{
 
 	color: #000;
 }
+.filter-submit{
+	margin-top: 40px;
+
+}
 .catalog-btn{
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
@@ -537,16 +566,21 @@ a{
 }
 .catalog-list{	
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	list-style: none;
+	width: 700px;
 	margin: 0;
 	padding: 0;
 
 }
 .catalog-item{
-	min-width: 225px;
+	width: 220px;
+	margin-bottom: 20px; 
 	text-align: center;
+}
+.catalog-item:not(:nth-child(3n)){
+	margin-right: 20px;
 }
 
 

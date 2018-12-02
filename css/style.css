@@ -582,7 +582,42 @@ a{
 .catalog-item:not(:nth-child(3n)){
 	margin-right: 20px;
 }
+.header-profile{
+	width: 300px;
+	text-align: left;
+	margin-left: 20px;
+}
 
+.header-profile .profile-link{
+	font-size: 21px;
+	line-height: 21px;
+	color: #000;
+}
+.profile-menu{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	padding-left: 15px;
+}
+.header-profile .profile-menu-btn{
+	margin-right: 30px;
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;	
+}
+.profile-menu-btn:hover{
+	color: #ee3643;
+	
+}
+.profile-menu-btn:active{
+	color: #32425c;
+	opacity: 0.2;
+}
 
 
 

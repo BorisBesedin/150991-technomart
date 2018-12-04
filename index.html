@@ -14,11 +14,11 @@
                 <div class="header-top-container">
           			<a class="logo">Техномарт</a>
           			<form class="header-search" method="get">
-          				<input name="header-search" placeholder="Поиск:" type="search" id="header-search" class="header-search">
+          				<input name="header-search" placeholder="Поиск:" type="search" id="header-search" class="header-search-area">
                         <label for="header-search" class="visually-hidden">Поиск</label>
           			</form>
-          			<a class="buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
-          			<a class="buy-btn header-top-btn" href="#">Корзина: <span class="basket-number">0</span></a>
+          			<a class="favorites-btn buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
+          			<a class="cart-btn buy-btn header-top-btn" href="#">Корзина: <span class="cart-number">0</span></a>
           			<a class="order-button header-top-btn" href="#">Оформить заказ</a>
                 </div>
       		</div>
@@ -60,29 +60,17 @@
       	<main class="container">
       		<section class="promo">
       			<h2 class="visually-hidden">Преимущества</h2>
-      			<div class="promo-slider">
-      				<figure class="promo-slides">
-      					<div class="slide">
-      						<h3 class="slide-name">Перфораторы</h3>
-      						<p class="slide-description">Настоящие мужские игрушки</p>
-      						<img src="img/promoslide-1.jpg" alt="Перфораторы">
-      					</div>
 
-      					<div class="slide">
-      						<h3 class="slide-name">Дрели</h3>
-      						<p class="slide-description">Соседям на радость!</p>
-      						<img src="img/promoslide-2.jpg" alt="Дрели">
-      					</div>  					
-      				</figure>
-      				<button type="button" class="slider-btn">Вперед</button>
-      				<button type="button" class="slider-btn">Назад</button>
-      				<a href="catalog.html" class="button">Открыть каталог</a>
-      			</div>
+                	
 
       			<ul class="promo-list">
       				<li class="promo-item materials">
-      					<span>Материалы</span>
-      					<a class="promo-btn" href="catalog.html">На любой вкус</a>
+          				<p>Материалы</p>
+          				<a class="promo-btn" href="catalog.html">На любой вкус</a>
+                        <div class="promo-item-icon">
+                            
+                        </div>
+
       				</li>
 
       				<li class="promo-item instruments">  					
@@ -95,6 +83,25 @@
       					<a class="promo-btn" href="catalog.html">Для стройки</a>
       				</li>
 
+                    <li class="promo-slider">
+                        <div class="promo-slides">
+                            <div class="slide">
+                                <h3 class="slide-name">Перфораторы</h3>
+                                <p class="slide-description">Настоящие мужские игрушки</p>
+                                <img src="img/promoslide-1.jpg" alt="Перфораторы">
+                            </div>
+
+                            <!-- <div class="slide">
+                                <h3 class="slide-name">Дрели</h3>
+                                <p class="slide-description">Соседям на радость!</p>
+                                <img src="img/promoslide-2.jpg" alt="Дрели">
+                            </div>   -->               
+                        </div>
+                        <button type="button" class="slider-btn">Вперед</button>
+                        <button type="button" class="slider-btn">Назад</button>
+                        <a href="catalog.html" class="button">Открыть каталог</a>
+                    </li>  
+
       				<li class="promo-item sale">  					
       					<span>Скидки 50%</span>
       					<a class="promo-btn" href="special-offer.html">На 350 товаров</a>
@@ -104,7 +111,6 @@
       					<span>Доставка</span>
       					<a class="promo-btn" href="delivery.html">Бесплатно</a>
       				</li>
-
       			</ul>
       		</section>
 

@@ -307,7 +307,7 @@
       		</div>
       	</footer>
 
-        <section class="modal modal-map">
+        <section class="modal-map">
             <div class="map-container">
                 <h2 class="visually-hidden">Как до нас добраться:</h2>
                 <img src="img/modal-map.jpg" alt="Большая конюшенная ул., 19" width="1736" height="779">
@@ -318,22 +318,24 @@
 
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Написать нам:</h2>
-            <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
-                <p class="write-us-field">
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p class="write-us-field">
-                    <label for="e-mail">Ваш e-mail:</label>
-                    <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com">
-                </p>
-                <p class="write-us-field">
-                    <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-                </p>
-                <button class="button" type="submit">Отправить</button>
-            </form>
             <button type="button" class="modal-close" aria-label="Закрыть"></button>
+            <div class="modal-container">
+                <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+                    <p class="write-us-field">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="write-us-field">
+                        <label for="e-mail">Ваш e-mail:</label>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com">
+                    </p>
+                    <p class="write-us-field">
+                        <label for="message">Текст письма:</label>
+                        <textarea id="message" name="message" placeholder="В свободной форме" rows="6"></textarea>
+                    </p>                    
+                    <button class="write-us-submit button" type="submit">Отправить</button>                   
+                </form>
+            </div>            
         </section>   
     </body>
 </html>

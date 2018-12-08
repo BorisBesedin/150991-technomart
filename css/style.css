@@ -9,7 +9,6 @@ body{
 }
 a{
   	text-decoration: none;
-
 }
 .visually-hidden{
 	position: absolute;
@@ -26,6 +25,25 @@ a{
 	color: #fff;
 	text-align: center;
 
+}
+.button{
+	padding: 10px 0;
+
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #fff;
+	background-color: #ee3643;
+	border: none;	
+	cursor: pointer;
+}
+.button:hover{	
+	background-color: #ca2c37;
+}
+.button:active{	
+	background-color: #ba2732;
 }
 .header-top{
 	background-color: #293449;	
@@ -279,22 +297,6 @@ a{
 .site-navigation a:active{
 	background-color: #1d2739;
 	opacity: 0.8;
-}
-.button{
-	font-size: 17px;
-	line-height: 17px;
-	text-transform: uppercase;
-
-	color: #fff;
-	background-color: #ee3643;
-	border: none;	
-	cursor: pointer;
-}
-.button:hover{	
-	background-color: #ca2c37;
-}
-.button:active{	
-	background-color: #ba2732;
 }
 .promo{
 	display: flex;
@@ -868,15 +870,34 @@ a{
 
 	color: #000;
 }
-.map-container{
-	position: relative;
-	width: 940px;
-	height: 445px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding-top: 5px;
+.modal-write-us{
+	width: 620px;
 }
+.write-us-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.user-contacts{
+	display: flex;
+	margin: 0 auto;
+}
+.write-us-field{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-top: 55px;
+}
+.write-us-footer{	
+	width: 100%;
+	padding: 38px 0;
 
+	text-align: center;
+	background-color: #f4f4f4;		
+}
+.write-us-submit{
+	width: 460px;
+}
 .modal-write-us input,
 .modal-write-us textarea{
 	
@@ -912,54 +933,29 @@ a{
 	padding-left: 14px;
 	resize: none;
 }
-.write-us-field{
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	margin-top: 20px;
-}
-.write-us-form{
-	width: 100%;
-}
-.modal-container{
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 460px;
-	padding-left: 80px;
-	padding-right: 80px;
-}
-.write-us-footer{
-	display: flex;
-	padding: 38px 80px;
-	margin-top: 38px;
-	background-color: #f4f4f4;
-}
 .modal-close{
 	width: 21px;
 	height: 21px;
-	margin-top: 15px;
-	margin-right: 8px;
-	align-self: flex-end;	
+	position: absolute;
+	top: 13px;
+	right: 8px;
 
 	border: none;
 	background: none;
 	background-image: url(../img/modal-close.png);
 	background-repeat: no-repeat;
 }
-.modal-map .modal-close{
-	position: absolute;
-	z-index: 10;
-	top: -7px;
-	right: 0;
+.modal-map{
+	box-shadow: 0 15px 50px 5px rgba(0, 0, 0, 0.6);
 }
-.write-us-submit{
-	width: 100%;
-	align-self: center;
-	padding: 10px 0;
+.map-container{
+	position: relative;
+	width: 940px;
+	height: 445px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 
-	font-size: 14px;
-	line-height: 18px;
-}
 .modal-cart-title{
 	padding-top: 40px;
 	padding-bottom: 70px;

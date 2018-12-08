@@ -17,13 +17,15 @@
           				<input name="header-search" placeholder="Поиск:" type="search" id="header-search" class="header-search-area">
                         <label for="header-search" class="visually-hidden">Поиск</label>
           			</form>
-          			<a class="favorites-btn buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
-          			<a class="cart-btn buy-btn header-top-btn" href="#">Корзина: <span class="cart-number">0</span></a>
-          			<a class="order-button header-top-btn" href="#">Оформить заказ</a>
+                    <div class="header-top-column">
+              			<a class="favorites-btn buy-btn header-top-btn" href="#">Закладки: <span class="favorites-number">0</span></a>
+              			<a class="cart-btn buy-btn header-top-btn" href="#">Корзина: <span class="cart-number">0</span></a>
+              			<a class="order-button header-top-btn" href="#">Оформить заказ</a>
+                    </div>
                 </div>
       		</div>
-            <div class="container">
-          		<div class="header-bottom">
+            <div class="header-bottom">
+          		<div class="header-bottom-container">
                     <div class="header-site-info">
                         <h1>Интернет-магазин<br>
                             строительных материалов
@@ -32,28 +34,29 @@
                     </div>
                     <div class="header-site-info">
                 		<p class="header-contacts">
-                			<a class="phone-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a><br>
+                			<span class="phone-number"><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></span>
                 			<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 		</p>
                     </div>
 
             		<ul class="user-navigation">
-            			<li class="user-reg-link"><a href="login.html">Войти</a></li>
-            			<li class="user-reg-link"><a href="registration.html">Регистрация</a></li>
+            			<li><a class="user-reg-link" href="login.html">Войти</a></li>
+            			<li><a class="user-reg-link" href="registration.html">Регистрация</a></li>
             		</ul>
                 </div>      		
-
-          		<nav class="main-menu">
-          			<ul class="site-navigation">
-          				<li><a href="index.html">Главная</a></li>
-          				<li><a href="about-company.html">Компания</a></li>
-          				<li><a href="catalog.html">Каталог</a></li>
-          				<li><a href="news.html">Новости</a></li>
-          				<li><a href="special-offer.html">Спецпредожения</a></li>
-          				<li><a href="delivery.html">Доставка</a></li>
-          				<li><a href="contacts.hlml">Контакты</a></li>
-          			</ul>
-          		</nav>
+                <div class="container">
+              		<nav class="main-menu">
+              			<ul class="site-navigation">
+              				<li><a href="index.html">Главная</a></li>
+              				<li><a href="about-company.html">Компания</a></li>
+              				<li><a href="catalog.html">Каталог</a></li>
+              				<li><a href="news.html">Новости</a></li>
+              				<li><a href="special-offer.html">Спецпредложения</a></li>
+              				<li><a href="delivery.html">Доставка</a></li>
+              				<li><a href="contacts.hlml">Контакты</a></li>
+              			</ul>
+              		</nav>
+                </div>
             </div>
       	</header>
 
@@ -303,20 +306,20 @@
       		</div>
       	</footer>
 
-        <section class="modal-map">
+        <!-- <section class="modal modal-map">
             <div class="map-container">
                 <h2 class="visually-hidden">Как до нас добраться:</h2>
                 <img src="img/modal-map.jpg" alt="Большая конюшенная ул., 19" width="1736" height="779">
                 <button type="button" class="modal-close" aria-label="Закрыть"></button>
             </div>
-
-        </section>
+        </section> -->
 
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Написать нам:</h2>
             <button type="button" class="modal-close" aria-label="Закрыть"></button>
-            <div class="modal-container">
-                <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+
+            <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+                <div class="modal-container">
                     <p class="write-us-field">
                         <label for="name">Ваше имя:</label>
                         <input type="text" id="name" name="name" placeholder="Имя Фамилия">
@@ -328,10 +331,12 @@
                     <p class="write-us-field">
                         <label for="message">Текст письма:</label>
                         <textarea id="message" name="message" placeholder="В свободной форме" rows="6"></textarea>
-                    </p>                    
-                    <button class="write-us-submit button" type="submit">Отправить</button>                   
-                </form>
-            </div>            
+                    </p>
+                </div>
+                <div class="write-us-footer">        
+                    <button class="write-us-submit button" type="submit">Отправить</button>  
+                </div>                 
+            </form>      
         </section>   
     </body>
 </html>

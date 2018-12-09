@@ -24,7 +24,9 @@ a{
 .page-header a{
 	color: #fff;
 	text-align: center;
-
+}
+.page-header{
+	margin-bottom: 40px;
 }
 .button{
 	padding: 10px 0;
@@ -39,7 +41,8 @@ a{
 	border: none;	
 	cursor: pointer;
 }
-.button:hover{	
+.button:hover,
+.button:focus{	
 	background-color: #ca2c37;
 }
 .button:active{	
@@ -116,7 +119,8 @@ a{
 	cursor: pointer;
 	box-shadow: 0 5px 0 #9a212a;
 }
-.logo:hover{
+.logo:hover,
+.logo:focus{
 	background-color: #ca2c37;
 }
 .logo:active{
@@ -124,7 +128,8 @@ a{
 }
 
 .header-search-area:hover,
-.buy-btn:hover{
+.buy-btn:hover,
+.buy-btn:focus{
 	background-color: #212a3a;
 }
 .buy-btn:hover::before{
@@ -165,7 +170,8 @@ a{
 	padding-left: 21px;
 	padding-right: 21px;
 }
-.order-button:hover{
+.order-button:hover,
+.order-button:focus{
 	background-color: #5fbb2d;
 }
 .order-button:active{
@@ -263,7 +269,8 @@ a{
 	font-size: 21px;
 	line-height: 21px;
 }
-.user-reg-link:hover{
+.user-reg-link:hover,
+.user-reg-link:focus{
 	color: #ee3643;
 }
 .user-reg-link:active{
@@ -291,7 +298,8 @@ a{
 	padding: 21px 30px;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover,
+.site-navigation a:focus{
 	background-color: #293449;
 }
 .site-navigation a:active{
@@ -368,7 +376,6 @@ a{
 	line-height: 18px;
 	text-transform: uppercase;
 	text-align: center;
-
 	color: #fff;
 
 	background-color: rgba(0, 0, 0, 0.1);
@@ -377,7 +384,8 @@ a{
 	margin-left: 23px;
 	margin-top: 22px;
 }
-.promo-btn:hover{
+.promo-btn:hover,
+.promo-btn:focus{
 	background-color: rgba(0, 0, 0, 0.2);
 }
 .promo-btn:active{
@@ -409,16 +417,15 @@ a{
 	left: 25px;
 	z-index: 3;
 
-
 	text-align: center;
 	padding: 10px 0;
 	width: 195px;
-
 }
 .promo-slides{
 	position: relative;
 	width: 620px;
 	height: 266px;
+	background-color: #927f6e;
 }
 .slide{
 	position: absolute;
@@ -455,8 +462,6 @@ a{
 	border: none;
 	outline: none;
 }
-
-
 .section-title{
 	margin: 0;
 	padding: 30px;
@@ -553,7 +558,8 @@ a{
 	height: 173px;
 }
 
-.catalog-item:hover{
+.catalog-item:hover,
+.catalog-item:focus{
 	box-shadow: 0px 5px 15px 1px #999;
 }
 .catalog-item:hover .catalog-item-menu{
@@ -577,7 +583,8 @@ a{
 	border-bottom: 2px solid #367315;
 	outline: none;
 }
-.buy-item-btn:hover{
+.buy-item-btn:hover,
+.buy-item-btn:focus{
 	background-color: #5fbb2d;
 }
 .buy-item-btn:active{
@@ -595,7 +602,8 @@ a{
 	outline: none;
 	cursor: pointer;
 }
-.cart-item-btn:hover{	
+.cart-item-btn:hover,
+.cart-item-btn:focus{	
 	border-color: #32425c;
 }
 .cart-item-btn:active{
@@ -636,7 +644,8 @@ a{
 .brands-list{
 	list-style: none;
 }
-.brands-list .brand:hover{
+.brands-list .brand:hover,
+.brands-list .brand:focus{
 	box-shadow: 0 5px 10px #aeb2ba;
 }
 .brands-list .brand:active{
@@ -652,8 +661,6 @@ a{
 	font-weight: normal;
 
 	color: #32425c;
-	
-
 }
 .about-container{
 	display: flex;
@@ -768,7 +775,8 @@ a{
 .footer-promo a{
 	color: #ffd180;
 }
-.footer-menu-btn:hover{
+.footer-menu-btn:hover,
+.footer-menu-btn:focus{
 	text-decoration: underline;
 }
 .footer-menu-btn:active{
@@ -821,7 +829,8 @@ a{
 	background-image: url(../img/insta-icon.png);
 }
 .social-button:hover,
-.social-button:active{
+.social-button:active,
+.social-button:focus{
 	background-color: #ee3643;
 }
 .developer-container{
@@ -846,7 +855,8 @@ a{
 .developer-column:nth-child(2){
 	padding-right: 10px;
 }
-.developer-contacts:hover{
+.developer-contacts:hover,
+.developer-contacts:focus{
 	text-decoration: underline;
 }
 .developer-contacts:active{

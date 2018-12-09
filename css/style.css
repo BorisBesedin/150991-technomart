@@ -504,10 +504,9 @@ a{
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
 	width: 218px;
-	height: 318px;
-	margin-bottom: 20px; 
+	margin-bottom: 18px; 
 	text-align: center;
 	border: 1px solid #e5e5e5;
 }
@@ -526,7 +525,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 45px;
+	top: 44px;
 	left: 42px;
 }
 .old-price{
@@ -540,7 +539,7 @@ a{
 .catalog-item p{
 	padding: 0;
 	margin: 0;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
@@ -549,10 +548,11 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-right: 25px;
+	padding-right: 17px;
 
-	height: 180px;
+	height: 173px;
 }
+
 .catalog-item:hover{
 	box-shadow: 0px 5px 15px 1px #999;
 }
@@ -603,7 +603,7 @@ a{
 }
 .catalog-item-btn{
 	width: 135px;
-	padding: 10px 0;
+	padding: 8px 0;
 	margin-bottom: 10px;
 }
 .catalog-item-description{
@@ -615,11 +615,13 @@ a{
 
 }
 .item-price{
+	display: block;
 	position: relative;
 	width: 140px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;

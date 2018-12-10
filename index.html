@@ -319,21 +319,22 @@
             <button type="button" class="modal-close" aria-label="Закрыть"></button>
 
             <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
-
-                <div class="user-contacts">
+                <div class="write-us-container">
+                    <div class="user-contacts">
+                        <p class="write-us-field">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                        </p>
+                        <p class="write-us-field">
+                            <label for="e-mail">Ваш e-mail:</label>
+                            <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com">
+                        </p>
+                    </div>
                     <p class="write-us-field">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-                    </p>
-                    <p class="write-us-field">
-                        <label for="e-mail">Ваш e-mail:</label>
-                        <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com">
-                    </p>
+                        <label for="message">Текст письма:</label>
+                        <textarea id="message" name="message" placeholder="В свободной форме" rows="6"></textarea>
+                    </p> 
                 </div>
-                <p class="write-us-field">
-                    <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме" rows="6"></textarea>
-                </p> 
 
                 <div class="write-us-footer">        
                     <button class="write-us-submit button" type="submit">Отправить</button>  

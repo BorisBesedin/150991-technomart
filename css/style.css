@@ -910,10 +910,11 @@ a{
 .modal-write-us{
 	width: 620px;
 }
+.write-us-container{
+	width: 460px;
+	margin: 38px auto;
+}
 .write-us-form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 .user-contacts{
 	display: flex;
@@ -923,7 +924,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	margin-top: 55px;
+	margin-top: 18px;
 }
 .write-us-footer{	
 	width: 100%;
@@ -945,7 +946,7 @@ a{
 	border-radius: 5px;
 	outline: none;
 	margin-top: 10px;
-	color: #a9a9a9;
+	color: #000;
 }
 .modal input:hover,
 .modal textarea:hover{
@@ -968,13 +969,14 @@ a{
 	padding: 0;
 	padding-top: 10px;
 	padding-left: 14px;
+	padding-right: 14px;
 	resize: none;
 }
 .modal-close{
 	width: 21px;
 	height: 21px;
 	position: absolute;
-	top: 13px;
+	top: 15px;
 	right: 8px;
 
 	border: none;

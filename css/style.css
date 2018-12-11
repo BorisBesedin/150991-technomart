@@ -468,7 +468,9 @@ a{
 .slide .slide-name{
 	margin-top: 25px;
 	margin-left: 23px;
-
+	
+	font-size: 36px;
+	line-height: 36px;
 	text-transform: uppercase;
 }
 .slide .slide-description{
@@ -692,6 +694,7 @@ a{
 }
 .brands{
 	position: relative;
+	margin-bottom: 85px;
 }
 .brands-list{
 	display: flex;
@@ -720,16 +723,80 @@ a{
 .brands-list .brand:active{
 	opacity: 0.4;
 }
+.services{
+	background-color: #f4f8f9;
+	padding-top: 40px;
+	margin-bottom: 80px;
+}
 .services h2{
 	color: #000;
 }
+.services p{
+	margin: 0;
+}
 .services h3{
+	margin: 0;
+	margin-bottom: 25px;
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
 	font-weight: normal;
 
 	color: #32425c;
+}
+.services-slider{
+	position: relative;
+	display: flex;
+	margin-top: 45px;
+	padding-top: 25px;
+	min-height: 285px;
+	
+}
+.services-slides{	
+	margin-left: 80px;
+}
+.service-slide{
+ 	position: absolute;	
+	width: 620px;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-position: 150px 22px;
+}
+.slide-title{
+	width: 300px;
+	padding-right: 20px;
+}
+.delivery-slide{	
+	background-image: url(../img/delivery-icon.png);
+	visibility: visible;
+}
+.guarantees-slide{
+	background-image: url(../img/guarantee-icon.png);
+	visibility: hidden;
+}
+.credit-slide{
+	background-image: url(../img/credit-icon.png);
+	visibility: hidden;
+}
+.credit-button{
+	width: 195px;
+	margin-top: 30px;
+}
+.services-slider-controls{
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+.services-slider-btn{
+	width: 240px;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 23px;
+}
+.service-slide{
+	position: absolute;
 }
 .about-container{
 	display: flex;
@@ -738,7 +805,7 @@ a{
 	color: #000;
 }
 .about-company{
-	margin-bottom: 88px;
+	margin-bottom: 85px;
 }
 .about-contacts{
 	display: flex;
@@ -759,9 +826,6 @@ a{
 }
 .about-company p{
 	margin-top: 25px;
-}
-.services{
-	margin-bottom: 180px;
 }
 .delivery-by{
 	list-style: none;

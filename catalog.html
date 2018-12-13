@@ -71,7 +71,7 @@
 	        <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
 	        <li class="breadcrumbs-current"><a class="breadcrumbs-link">Перфораторы</a></li>
       	</ul>
-        <h1 class="section-title">Перфораторы</h1>
+        <h1 class="section-title catalog-title">Перфораторы</h1>
 
         <div class="catalog-container">
           	<section class="filters">
@@ -83,10 +83,13 @@
                             <button type="button" class="min-price-set filter-price-btn"></button>
                             <button type="button" class="max-price-set filter-price-btn"></button>                   
                         </div>
-                        <label for="min-price" class="visually-hidden">Минимальная цена</label>
-                        <input type="number" name="min-price" value="0" id="min-price">   
-                        <label for="max-price" class="visually-hidden">Максимальная цена</label>                 
-                        <input type="number" name="max-price" value="30000" id="max-price">                             
+                        <div class="price-range">
+                            <label for="min-price" class="visually-hidden">Минимальная цена</label>
+                            <input size="30" type="number" name="min-price" value="0" id="min-price">
+                            <span> - </span>   
+                            <label for="max-price" class="visually-hidden">Максимальная цена</label>                 
+                            <input type="number" name="max-price" value="30000" id="max-price">
+                        </div>                             
                     </fieldset>
                     <fieldset class="filter-type">
                         <legend class="filter-name">Производители:</legend>
@@ -137,32 +140,32 @@
           	</section>
 
           	<section class="catalog">
-                <h2 class="sort-title">Сортировка:</h2>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <ul class="sort-method">
-                        <li class="sort-option">
-                            <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="price" id="sort-price" checked>
-                            <label for="sort-price">По цене</label>
-                        </li>
+                <div class="sort-container">
+                    <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
+                        <h2 class="sort-title">Сортировка:</h2>
+                        <ul class="sort-method">
+                            <li class="sort-option">
+                                <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="price" id="sort-price" checked>
+                                <label for="sort-price">По цене</label>
+                            </li>
 
-                        <li class="sort-option">
-                            <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="type" id="sort-type">
-                            <label for="sort-type">По типу</label>
-                        </li>
+                            <li class="sort-option">
+                                <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="type" id="sort-type">
+                                <label for="sort-type">По типу</label>
+                            </li>
 
-                        <li class="sort-option">
-                            <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="function" id="sort-function">
-                            <label for="sort-function">По функционалу</label>
-                        </li>
-                    </ul> 
+                            <li class="sort-option">
+                                <input type="radio" class="visually-hidden sort-radio" name="sort-by" value="function" id="sort-function">
+                                <label for="sort-function">По функционалу</label>
+                            </li>
+                        </ul> 
 
-                    <div class="sort-direction">
-                        <label for="sort-ascending" class="visually-hidden">По возрастанию</label>
-                        <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="ascending" id="sort-ascending">
-                        <label for="sort-descending" class="visually-hidden">По убыванию</label>
-                        <input type="radio" class="visually-hidden sort-radio" name="sort-direction" value="descending" id="sort-descending">
-                    </div>
-                </form>
+                        <div class="sort-direction">
+                            <a href="#" class="arrow arrow-up" aria-label="По возрастанию"></a>
+                            <a href="#" class="arrow arrow-down" aria-label="По убыванию"></a>                        
+                        </div>
+                    </form>
+                </div>
 
           		<h2 class="visually-hidden">Каталог</h2>
           		<ul class="catalog-list">
@@ -342,17 +345,19 @@
                     <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
                     <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">Следующая</a></li>
+                    <li class="pagination-item next-button"><a href="#">Следующая</a></li>
                 </ul>
           	</section>
         </div>
-
-        <section class="categoty-description">
-          <h2>Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </section>
-  	</main>
+    </main>
+    <section class="category-description">
+        <div class="container">
+            <h2 class="section-title-no-bg">Пара слов о перфораторах</h2>
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
+    </section>
+  	
     <footer class="page-footer">
         <div class="footer-top">
             <div class="footer-container">
@@ -403,7 +408,7 @@
         </div>
     </footer>    
 
-    <!-- <section class="modal modal-cart">
+    <section class="modal modal-cart">
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
         <div class="modal-cart-title">
             <h2>Товар добавлен в корзину!</h2>            
@@ -412,7 +417,7 @@
             <a href="order.html" class="button cart-menu-btn">Оформить заказ</a>
             <button type="button" class="go-on-btn cart-menu-btn">Продолжить покупки</button>
         </div>       
-    </section>    -->
+    </section>   
 	
 </body>
 </html>

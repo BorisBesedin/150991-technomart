@@ -177,6 +177,9 @@ a{
 	margin-right: 15px;
 	opacity: 0.3;
 }
+.buy-btn.added{
+	background-color: #ee3643;
+}
 .header-search-area:focus{
 	background-color: #fff;
 	color: #000;
@@ -1060,8 +1063,24 @@ a{
 	display: none;
 	width: 620px;
 }
+.modal-map{
+	display: none;
+	box-shadow: 0 15px 50px 5px rgba(0, 0, 0, 0.6);
+}
+.modal-cart{
+	display: none;
+}
+@keyframes emersion{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 .modal-show{
 	display: block;
+	animation: emersion 0.4s;
 }
 .write-us-container{
 	width: 460px;
@@ -1135,10 +1154,6 @@ a{
 	background: none;
 	background-image: url(../img/modal-close.png);
 	background-repeat: no-repeat;
-}
-.modal-map{
-	display: none;
-	box-shadow: 0 15px 50px 5px rgba(0, 0, 0, 0.6);
 }
 .map-container{
 	position: relative;
@@ -1427,9 +1442,7 @@ a{
 	opacity: 0.6;
 }
 .filter-radio:hover + label::before,
-.filter-radio:focus + label::before,
-.filter-radio:hover + label::after,
-.filter-radio:focus + label::after{
+.filter-radio:hover + label::after{
 	opacity: 1;
 }
 .filter-radio:disabled + label::before,

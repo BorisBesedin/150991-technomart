@@ -71,3 +71,24 @@ skip.addEventListener("click", function(evt){
 });
 
 
+var serviceBtns = document.querySelectorAll(".services-slider-btn");
+var slides = document.querySelectorAll(".service-slide");
+function showSlide(n){
+	for (var i = 0; i < slides.length; i++) {
+		var slide = slides[n-1];
+		slides[i].classList.remove("showing");
+		slide.classList.add("showing");
+		for (var j = 0; j < serviceBtns.length; j++){
+		var serviceBtn = serviceBtns[n-1];
+		serviceBtns[i].classList.remove("active");
+		serviceBtn.classList.add("active");
+		}
+	}
+	
+}
+
+
+
+
+
+

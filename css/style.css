@@ -770,12 +770,16 @@ a{
 	background-image: url(../img/service-shadow.png);
 }
 .service-slide{
- 	position: absolute;	
+ 	position: absolute;
+ 	display: none;	
 	width: 620px;
 	height: 100%;
 
 	background-repeat: no-repeat;
 	background-position: 150px 22px;
+}
+.showing{
+	display: block;
 }
 .slide-title{
 	width: 300px;
@@ -783,15 +787,12 @@ a{
 }
 .delivery-slide{	
 	background-image: url(../img/delivery-icon.png);
-	visibility: visible;
 }
 .guarantees-slide{
 	background-image: url(../img/guarantee-icon.png);
-	visibility: hidden;
 }
 .credit-slide{
 	background-image: url(../img/credit-icon.png);
-	visibility: hidden;
 }
 .credit-button{
 	width: 195px;
@@ -893,13 +894,9 @@ a{
 	outline: none;
 	cursor: pointer;
 }
-.services-slider-btn:hover{
+.services-slider-btn:not(.active):hover{
 	background-color: #293449;
 	color: #fff;
-}
-.services-slider-btn:focus{
-	background-color: #fff;
-	color: #32425c;
 }
 .page-footer{
 	background-color: #32425c;

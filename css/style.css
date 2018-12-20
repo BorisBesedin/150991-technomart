@@ -1484,6 +1484,7 @@ a{
 	padding-top: 10px;
 }
 .price-controls{
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1493,10 +1494,43 @@ a{
 	margin-top: 15px;
 	background-color: #f7f3ec;
 }
+.line{
+	width: 172px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+.line::after{
+	content: "";
+	position: absolute;
+	width: 172px;
+	height: 2px;
+	background-color: #00ca74;
+}
 .filter-price-btn{
+	position: absolute;
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
+	background-color: #fff;
+	border: none;
+	box-shadow: 0 2px 0 0 #e0ddd8;
+	z-index: 2;
+}
+.filter-price-btn::after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #ababab;
+}
+.min-price-set{
+	left: 20px;
+}
+.max-price-set{
+	right: 20px;
 }
 .pagination-list{
 	display: flex;

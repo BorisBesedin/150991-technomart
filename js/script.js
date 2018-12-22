@@ -47,6 +47,7 @@ var cartClose = modalCart.querySelector(".modal-close");
 for (var i = 0; i < buyItemBtns.length; i++) {	
 	var buyItemBtn = buyItemBtns[i];	
 	buyItemBtn.addEventListener("click", function(evt){
+		evt.preventDefault();
 		modalCart.classList.add("modal-show");
 		cartCounter ++;
 		cartBtn.classList.add("added");
@@ -55,7 +56,8 @@ for (var i = 0; i < buyItemBtns.length; i++) {
 }
 for (var i = 0; i < cartItemBtns.length; i++) {	
 	var cartItemBtn = cartItemBtns[i];	
-	cartItemBtn.addEventListener("click", function(evt){		
+	cartItemBtn.addEventListener("click", function(evt){
+		evt.preventDefault();		
 		favoritesCounter ++;
 		favoritesBtn.classList.add("added");
 		favoritesNumber.innerHTML = favoritesCounter;

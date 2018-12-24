@@ -3,28 +3,9 @@ var writeUsBnt = document.querySelector(".to-write-us-btn");
 var close = writeUs.querySelector(".modal-close");
 var username = writeUs.querySelector("[name=name]");
 
-writeUsBnt.addEventListener("click", function(evt){
-	evt.preventDefault();
-	writeUs.classList.add("modal-show");
-	username.focus();
-});
-close.addEventListener("click", function(evt){
-	evt.preventDefault();
-	writeUs.classList.remove("modal-show");
-});
-
 var mapModal = document.querySelector(".modal-map");
 var mapBtn = document.querySelector(".map-btn");
 var closeMap = mapModal.querySelector(".modal-close");
-
-mapBtn.addEventListener("click", function(evt){
-	evt.preventDefault();
-	mapModal.classList.add("modal-show");
-});
-closeMap.addEventListener("click", function(evt){
-	evt.preventDefault();
-	mapModal.classList.remove("modal-show");
-});
 
 var cartNumber = document.querySelector(".cart-number");
 var favoritesNumber = document.querySelector(".favorites-number");
@@ -42,7 +23,24 @@ var cartItemBtns = document.querySelectorAll(".cart-item-btn");
 var modalCart = document.querySelector(".modal-cart");
 var cartClose = modalCart.querySelector(".modal-close");
 
+writeUsBnt.addEventListener("click", function(evt){
+	evt.preventDefault();
+	writeUs.classList.add("modal-show");
+	username.focus();
+});
+close.addEventListener("click", function(evt){
+	evt.preventDefault();
+	writeUs.classList.remove("modal-show");
+});
 
+mapBtn.addEventListener("click", function(evt){
+	evt.preventDefault();
+	mapModal.classList.add("modal-show");
+});
+closeMap.addEventListener("click", function(evt){
+	evt.preventDefault();
+	mapModal.classList.remove("modal-show");
+});
 
 for (var i = 0; i < buyItemBtns.length; i++) {	
 	var buyItemBtn = buyItemBtns[i];	
@@ -72,24 +70,52 @@ skip.addEventListener("click", function(evt){
 	modalCart.classList.remove("modal-show");
 });
 
-
-var serviceBtns = document.querySelectorAll(".services-slider-btn");
-var slides = document.querySelectorAll(".service-slide");
-function showSlide(n){
-	for (var i = 0; i < slides.length; i++) {
-		var slide = slides[n-1];
-		slides[i].classList.remove("showing");
-		slide.classList.add("showing");
-		for (var j = 0; j < serviceBtns.length; j++){
-		var serviceBtn = serviceBtns[n-1];
-		serviceBtns[i].classList.remove("active");
-		serviceBtn.classList.add("active");
-		}
-	}
-	
+var slideIndex = 1;
+function currentSlide(n) {
+  	showSlide(slideIndex = n);
 }
+function showSlide(n){
+	var i;
+	var slides = document.querySelectorAll(".service-slide");
+	var tabs = document.querySelectorAll(".services-slider-btn");
+	for (i = 0; i < slides.length; i++) {
+      	slides[i].style.display = "none";  
+  	}
+  	for (i = 0; i < tabs.length; i++) {
+     	tabs[i].className = tabs[i].className.replace(" active", "");
+  	}
+  	slides[slideIndex-1].style.display = "block";  
+  	tabs[slideIndex-1].className += " active";
+}
+showSlide(slideIndex);
 
-
+var promoSlideIndex = 1;
+function promoCurrentSlide(n) {
+  	promoShowSlide(promoSlideIndex = n);
+}
+function plusSlides(n) {
+  	promoShowSlide(promoSlideIndex += n);
+}
+function promoShowSlide(n){
+	var i;
+	var promoSlides = document.querySelectorAll(".slide");
+	var dots = document.querySelectorAll(".dot");
+	if (n > promoSlides.length) {
+		promoSlideIndex = 1
+	}    
+  	if (n < 1) {
+  		promoSlideIndex = promoSlides.length
+  	}
+	for (i = 0; i < promoSlides.length; i++) {
+      	promoSlides[i].style.display = "none";  
+  	}
+  	for (i = 0; i < dots.length; i++) {
+     	dots[i].className = dots[i].className.replace(" active", "");
+  	}
+  	promoSlides[promoSlideIndex-1].style.display = "block";  
+  	dots[promoSlideIndex-1].className += " active";
+}
+promoShowSlide(promoSlideIndex);
 
 
 

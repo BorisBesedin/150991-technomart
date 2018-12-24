@@ -571,6 +571,36 @@ a{
 	border: none;
 	outline: none;
 }
+.dots{
+	display: flex;
+	position: absolute;
+	bottom: 35px;
+	left: 46%;
+	z-index: 3;	
+}
+.dot{
+	position: relative;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin-left: 10px;
+	border: none;
+	background: #fff;
+	border-radius: 50%;
+	outline: none;
+}
+.dot.active::after{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 6px;
+	height: 6px;
+
+	background-color: #ee3643;
+	border-radius: 50%;
+
+}
 .popular{
 	position: relative;
 }

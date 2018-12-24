@@ -23,6 +23,9 @@ var cartItemBtns = document.querySelectorAll(".cart-item-btn");
 var modalCart = document.querySelector(".modal-cart");
 var cartClose = modalCart.querySelector(".modal-close");
 
+var slideIndex = 1;
+var promoSlideIndex = 1;
+
 writeUsBnt.addEventListener("click", function(evt){
 	evt.preventDefault();
 	writeUs.classList.add("modal-show");
@@ -70,7 +73,6 @@ skip.addEventListener("click", function(evt){
 	modalCart.classList.remove("modal-show");
 });
 
-var slideIndex = 1;
 function currentSlide(n) {
   	showSlide(slideIndex = n);
 }
@@ -89,7 +91,6 @@ function showSlide(n){
 }
 showSlide(slideIndex);
 
-var promoSlideIndex = 1;
 function promoCurrentSlide(n) {
   	promoShowSlide(promoSlideIndex = n);
 }

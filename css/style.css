@@ -1737,6 +1737,7 @@ a{
 	position: absolute;
 	width: 20px;
 	height: 20px;
+	top: 30px;
 
 	border-radius: 50%;
 	background-color: #fff;

@@ -943,6 +943,7 @@ a{
 	background-image: url(../img/credit-icon.png);
 }
 .credit-button{
+	display: block;
 	width: 195px;
 	margin-top: 30px;
 }
